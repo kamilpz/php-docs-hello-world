@@ -7,6 +7,8 @@ $img = new phpTextToImage;
 $text = 'Welcome to Legend Blogs.\nConvert Text To Image In PHP.';
 $img->createImage($text);
 
+header("Content-Type: image/png");
+
 imagepng($img->image);
 imagedestroy($img->image);
 ?>
