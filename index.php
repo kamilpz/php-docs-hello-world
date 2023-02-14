@@ -11,7 +11,7 @@ $fileName = "legendblogs";
 $img->saveAsPng($fileName);
 
 header("Content-Type: image/png");
-header("Content-Length: " . filesize($fileName));
+header("Content-Length: " . filesize($img));
 
-$fp = fopen($fileName, 'rb');
+$fp = fopen($img, 'rb');
 fpassthru($fp);
