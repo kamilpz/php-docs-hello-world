@@ -7,7 +7,7 @@
  * @link    https://www.legendblogs.com
  */
 class phpTextToImage {
-    private $image;
+    public $image;
     /**
      * Create image from text
      * @param string text to convert into image
