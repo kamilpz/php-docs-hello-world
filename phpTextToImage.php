@@ -19,7 +19,7 @@ class phpTextToImage {
      */
     function createImage($text, $textColor = '', $backgroundColor = '', $fontSize = 22, $imgWidth = 600, $imgHeight = 300) {
         //text font path
-        $font = '/home/site/wwwroot/Pacifico.ttf';
+        $font = '/home/site/wwwroot/Roboto-Medium.ttf';
         //create the image
         $this->image = imagecreatetruecolor($imgWidth, $imgHeight);
         $colorCode = array('#ffffff','#db3236', '#f4c20d', '#3cba54', '#4c53cc', '#56aad8', '#61c4a8');
