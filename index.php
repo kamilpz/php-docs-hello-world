@@ -4,7 +4,7 @@ require_once 'phpTextToImage.php';
 //create img object
 $img = new phpTextToImage;
 //create image from text
-$text = 'Welcome to Legend Blogs.\nConvert Text To Image In PHP.';
+$text = $_GET["text"]
 $img->createImage($text);
 
 header("Content-Type: image/png");
